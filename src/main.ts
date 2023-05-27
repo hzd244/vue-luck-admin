@@ -18,8 +18,6 @@ import "@/styles/theme/element-dark.scss";
 import "@/styles/element.scss";
 // svg icons
 import "virtual:svg-icons-register";
-// element plus
-import ElementPlus from "element-plus";
 // element icons
 import * as Icons from "@element-plus/icons-vue";
 // vue Router
@@ -40,4 +38,4 @@ Object.keys(Icons).forEach(key => {
   app.component(key, Icons[key as keyof typeof Icons]);
 });
 
-app.use(ElementPlus).use(router).use(I18n).use(pinia).mount("#app");
+app.use(router).use(I18n).use(pinia).mount("#app");
