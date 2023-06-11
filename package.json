@@ -34,6 +34,7 @@
     "@element-plus/icons-vue": "^2.1.0",
     "@vueuse/core": "^10.1.2",
     "@wangeditor/editor": "^5.1.23",
+    "@wangeditor/editor-for-vue": "5",
     "axios": "^1.4.0",
     "dayjs": "^1.11.7",
     "driver.js": "^0.9.8",
@@ -51,7 +52,7 @@
     "vue": "^3.3.4",
     "vue-i18n": "^9.2.2",
     "vue-router": "^4.2.1",
-    "vuedraggable": "^2.24.3"
+    "vuedraggable": "4.1.0"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.6.3",

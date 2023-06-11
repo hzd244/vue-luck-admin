@@ -10,6 +10,9 @@ dependencies:
   '@wangeditor/editor':
     specifier: ^5.1.23
     version: registry.npmmirror.com/@wangeditor/editor@5.1.23
+  '@wangeditor/editor-for-vue':
+    specifier: '5'
+    version: registry.npmmirror.com/@wangeditor/editor-for-vue@5.1.12(@wangeditor/editor@5.1.23)(vue@3.3.4)
   axios:
     specifier: ^1.4.0
     version: registry.npmmirror.com/axios@1.4.0
@@ -62,8 +65,8 @@ dependencies:
     specifier: ^4.2.1
     version: registry.npmmirror.com/vue-router@4.2.1(vue@3.3.4)
   vuedraggable:
-    specifier: ^2.24.3
-    version: registry.npmmirror.com/vuedraggable@2.24.3
+    specifier: 4.1.0
+    version: registry.npmmirror.com/vuedraggable@4.1.0(vue@3.3.4)
 
 devDependencies:
   '@commitlint/cli':
@@ -3347,6 +3350,19 @@ packages:
       slate: registry.npmmirror.com/slate@0.72.8
       slate-history: registry.npmmirror.com/slate-history@0.66.0(slate@0.72.8)
       snabbdom: registry.npmmirror.com/snabbdom@3.5.1
+    dev: false
+
+  registry.npmmirror.com/@wangeditor/editor-for-vue@5.1.12(@wangeditor/editor@5.1.23)(vue@3.3.4):
+    resolution: {integrity: sha512-0Ds3D8I+xnpNWezAeO7HmPRgTfUxHLMd9JKcIw+QzvSmhC5xUHbpCcLU+KLmeBKTR/zffnS5GQo6qi3GhTMJWQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@wangeditor/editor-for-vue/-/editor-for-vue-5.1.12.tgz}
+    id: registry.npmmirror.com/@wangeditor/editor-for-vue/5.1.12
+    name: '@wangeditor/editor-for-vue'
+    version: 5.1.12
+    peerDependencies:
+      '@wangeditor/editor': '>=5.1.0'
+      vue: ^3.0.5
+    dependencies:
+      '@wangeditor/editor': registry.npmmirror.com/@wangeditor/editor@5.1.23
+      vue: registry.npmmirror.com/vue@3.3.4
     dev: false
 
   registry.npmmirror.com/@wangeditor/editor@5.1.23:
@@ -9147,10 +9163,10 @@ packages:
       - supports-color
     dev: true
 
-  registry.npmmirror.com/sortablejs@1.10.2:
-    resolution: {integrity: sha512-YkPGufevysvfwn5rfdlGyrGjt7/CRHwvRPogD/lC+TnvcN29jDpCifKP+rBqf+LRldfXSTh+0CGLcSg0VIxq3A==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/sortablejs/-/sortablejs-1.10.2.tgz}
+  registry.npmmirror.com/sortablejs@1.14.0:
+    resolution: {integrity: sha512-pBXvQCs5/33fdN1/39pPL0NZF20LeRbLQ5jtnheIPN9JQAaufGjKdWduZn4U7wCtVuzKhmRkI0DFYHYRbB2H1w==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/sortablejs/-/sortablejs-1.14.0.tgz}
     name: sortablejs
-    version: 1.10.2
+    version: 1.14.0
     dev: false
 
   registry.npmmirror.com/sortablejs@1.15.0:
@@ -10658,12 +10674,16 @@ packages:
       '@vue/server-renderer': registry.npmmirror.com/@vue/server-renderer@3.3.4(vue@3.3.4)
       '@vue/shared': registry.npmmirror.com/@vue/shared@3.3.4
 
-  registry.npmmirror.com/vuedraggable@2.24.3:
-    resolution: {integrity: sha512-6/HDXi92GzB+Hcs9fC6PAAozK1RLt1ewPTLjK0anTYguXLAeySDmcnqE8IC0xa7shvSzRjQXq3/+dsZ7ETGF3g==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/vuedraggable/-/vuedraggable-2.24.3.tgz}
+  registry.npmmirror.com/vuedraggable@4.1.0(vue@3.3.4):
+    resolution: {integrity: sha512-FU5HCWBmsf20GpP3eudURW3WdWTKIbEIQxh9/8GE806hydR9qZqRRxRE3RjqX7PkuLuMQG/A7n3cfj9rCEchww==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/vuedraggable/-/vuedraggable-4.1.0.tgz}
+    id: registry.npmmirror.com/vuedraggable/4.1.0
     name: vuedraggable
-    version: 2.24.3
+    version: 4.1.0
+    peerDependencies:
+      vue: ^3.0.1
     dependencies:
-      sortablejs: registry.npmmirror.com/sortablejs@1.10.2
+      sortablejs: registry.npmmirror.com/sortablejs@1.14.0
+      vue: registry.npmmirror.com/vue@3.3.4
     dev: false
 
   registry.npmmirror.com/webidl-conversions@4.0.2:
